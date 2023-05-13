@@ -1,0 +1,20 @@
+{
+    "fullname":"Muhammad Shahpaal",
+    "email":"Shahpaal@gmail.com",
+    "pwd":"Shahpaal",
+    "gender":"Male",
+    "sec_ques":"What is meanning of shahpaal?",
+    "sec_ans":"born and raised like a king"
+}
+
+
+{
+    "email":"Shahpaal@gmail.com",
+    "pwd":"Shahpaal"
+}
+
+
+{
+  "email": "nehal.abd24@gmail.com",
+  "new_email": "muhammadnehal24@yahoo.com"
+}

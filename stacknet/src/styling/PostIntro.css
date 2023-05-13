@@ -1,0 +1,213 @@
+.post {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 0 6px 4px rgb(212 212 212 / 11%);
+  margin-bottom: 15px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.postImg {
+  height: 350px;
+  opacity: 0.8;
+  width: 100%;
+  position: relative;
+  transition: transform 150ms ease-in-out, opacity 150ms ease-in-out;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  border-radius: 10px 10px 0 0;
+  transition: 0.2s;
+}
+.post a{
+  width: 100%;
+}
+.post:hover .postImg {
+  overflow: hidden;
+  opacity: 1;
+  scale: 1.1;
+}
+.postContent {
+  z-index: 1;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0 5px 5px rgb(0 0 0 / 5%);
+  align-items: center;
+}
+
+.post:hover > .postContent, .postImg {
+  background-color: var(--clrbgtint);
+}
+
+.post .postContent .userImg {
+  width: 8%;
+  height: 60px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post .postContent .userImg img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.postImg img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+}
+
+.postTextBox {
+  width: 87%;
+}
+
+.postTitle {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 5px 20px 1px 0px;
+  overflow: hidden;
+  height: 25px;
+}
+
+.postedBy {
+  font-size: 15px;
+  margin: 10px 0;
+  color: var(--clrlight);
+  width: 90%;
+  overflow: hidden;
+}
+
+.postDesc {
+  font-size: 13px;
+  margin: 5px 0;
+  /* padding-right: 15px; */
+  max-height: 33px;
+  overflow: hidden;
+  color: var(--clrlight);
+  font-style: italic;
+  padding-right: 10px;
+  border-right: 1px solid var(--clrlighter);
+}
+
+.RepliesNIcon {
+  position: relative;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 10px 20px 0 0;
+}
+
+.repliesDiv{
+  position: absolute;
+  margin-top: 30px;
+}
+.replies {
+  color: var(--clrlight);
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.toggle{
+  position: absolute;
+  float: right;
+}
+.delete{
+  position: absolute;
+  top: 20px;
+  width: 100px;
+  z-index: 1000;
+}
+.delete > *{
+  color: var(--clrprimary);
+}
+
+
+/* ============= Media Queries ========= */
+@media (width < 950px) {
+  .post .postContent .userImg{
+    width: 80px;
+    height: 80px;
+  }
+  .post .postContent .userImg img{
+    width: 60px;
+    height: 60px;
+  }
+  .delete{
+    top: 24px;
+    right: -10px;
+  }
+  
+}
+
+@media (width < 650px) {
+  .post{
+    cursor: default;
+  }
+
+  .RepliesNIcon{
+    position: unset;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 40px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+  }
+  .delete{
+      right: 16px;
+      bottom: 40px;
+      top: unset;
+  }
+  .repliesDiv{
+      flex-direction: row;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      width: 60%;
+      margin-top: 0;
+  }
+  .PanelBtnNProfile{
+      justify-content: flex-end;
+      width: 40%;
+      position: relative;
+      margin-top: 10px;
+  }
+
+  .post .postContent .userImg{
+    width: 60px;
+    height: 60px;
+    
+  }
+  .post .postContent .userImg img{
+    width: 60px;
+    height: 60px;
+    
+  }
+}
+
+@media (width < 520px) {
+  .post .postContent .userImg{
+    width: 50px;
+    height: 50px;
+    
+  }
+  .post .postContent .userImg img{
+    width: 50px;
+    height: 50px;
+    
+  }
+}

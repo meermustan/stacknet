@@ -1,0 +1,65 @@
+.userCard {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    height: 300px;
+    min-width: 250px;
+    /* width: auto; */
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(77, 109, 117);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userCardImg {
+    margin-top: 5px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    align-items: center;
+    height: 80px;
+    padding: 0;
+}
+
+.userCardImg>img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+}
+
+.cardContent {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardContent>h3 {
+    color: white;
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: center;
+    padding-bottom: 8px;
+    border-bottom: 1px solid white;
+}
+
+.cardContent>p {
+    display: block;
+    width: 100%;
+    margin: 3px 0;
+    font-size: 14px;
+    color: white;
+}
+
+.cardContent>button {
+    padding: 8px 15px;
+    margin-top: 10px;
+    width: 50%;
+    border-radius: 8px;
+    border: none;
+    color: var(--clrdark);
+    font-weight: bold;
+    cursor: pointer;
+}

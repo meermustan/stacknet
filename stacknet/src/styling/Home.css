@@ -1,0 +1,499 @@
+
+/* HOME PAGE STYLING */
+.HomeBody {
+  margin-top: 135px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.HomeContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  height: 540px;
+}
+
+.WelcomeContainer {
+  width: 90%;
+  border-radius: 15px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  justify-content: center;
+  /* height: 320px; */
+  max-width: 1420px;
+}
+
+.WelcomeTextAndImgOuter{
+  display: flex;
+  height: 380px;
+}
+
+.WelcomeTextBox {
+  width: 65%;
+  border-bottom-left-radius: 12px;
+  padding: 20px;
+  background-color: var(--clrprimary);
+}
+
+.WelcomeTextBox h1 {
+  color: white;
+  margin-top: 20px;
+  font-weight: bold;
+  margin-left: 25px;
+  /* margin-bottom: 20px; */
+  font-size: 2.5em;
+}
+
+.WelcomeTextBox p {
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-right: 50px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+.WelcomeImageBox {
+  width: 35%;
+}
+
+.WelcomeOptionSection {
+  width: 85%;
+  max-width: 1420px;
+  top: 440px;
+  position: absolute;
+  padding: 0px 2px 0px 2px;
+}
+
+.Options {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.Option {
+  min-width: 320px;
+  background-color: white;
+  width: 47%;
+  border-radius: 20px;
+  height: 110px;
+  transition: 0.2s;
+  display: inline;
+  cursor: pointer;
+}
+
+.Option3 {
+  background-color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 21%;
+  transition: 0.2s;
+  margin-top: 15px;
+  width: 60%;
+}
+
+.Option:hover,
+.Option3:hover {
+  transform: translateY(-10px);
+  transition: 0.2s;
+}
+
+.OptContent {
+  padding: 10px;
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0 5px 5px rgb(0 0 0 / 15%);
+}
+
+.OptionImg {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  /* background-color: red; */
+  align-items: center; 
+}
+.OptionImg img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.OptionTextBox {
+  width: 85%;
+  margin-left: 10px;
+}
+
+.OptionTitle {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 5px 20px 5px 0px;
+  overflow: hidden;
+  height: 25px;
+}
+
+.OptionDesc {
+  padding: 3px 0px 2px 0px;
+  font-size: 15px;
+}
+
+.btnNReply {
+  display: flex;
+  justify-content: space-between;
+}
+
+.OptionBtn {
+  padding: 4px 0px 2px 0px;
+  width: max-content;
+  border-bottom: 1px solid var(--clrprimary);
+  font-size: 15px;
+  color: var(--clrprimary);
+}
+
+.RecentDiscussions {
+  display: flex;
+  max-width: 1520px;
+  width: 100%;
+  padding: 0 20px;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+}
+
+.RecentDiscussions h1 {
+  margin: 30px 0 50px 0;
+}
+
+.DiscussionSection {
+  display: flex;
+  width: 90%;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.DiscussionSection a{
+  margin: 6px 4px;
+  width: 45%;
+  max-width: 500px;
+}
+
+.GOption {
+  width: 100%;
+  cursor: pointer;
+  background: white;
+  border-radius: 20px;
+  height: 110px;
+  transition: 0.2s;
+}
+
+.GOption:hover>.OptContent {
+  background-color: var(--clrbgtint);
+}
+
+.GOptionBtn {
+  padding: 4px 0px 2px 0px;
+  font-size: 13px;
+  background: none;
+  color: var(--clrprimary);
+  display: inline;
+}
+
+.Replies {
+  display: inline-block;
+  text-align: end;
+  background: none;
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--clrlight);
+  margin: 0px 20px;
+}
+.Replies pre {
+  display: inline;
+  color: var(--clrlight);
+  margin-right: 10px;
+}
+
+.seeAllDisc {
+  margin: 30px 0 10px 0;
+}
+
+.seeAllDisc span {
+  margin-left: 10px;
+  color: white;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  background: none;
+}
+
+.rotated {
+  transform: rotate(90deg);
+  font-size: 12px;
+  color: var(--clrprimary);
+}
+
+.WelcomeImg {
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+}
+
+.PopularProjects {
+  width: 100%;
+  background-color: white;
+  max-width: 1520px;
+  padding: 30px 0;
+  border-bottom: 2px solid var(--clrbgtint);
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.PopularProjects h1 {
+  margin: 30px 0 40px 0;
+}
+
+.ProjectsSection {
+  width: 90%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.ProjectIntro {
+  /* width: 31%; */
+  min-width: 280px;
+  margin-top: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px rgb(0 0 0 / 15%);
+}
+
+.projectIntroImg {
+  height: 180px;
+  opacity: 1;
+  width: 100%;
+  position: relative;
+  transition: transform 150ms ease-in-out, opacity 150ms ease-in-out;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  transition: 0.2s;
+  overflow: hidden;
+}
+
+.ProjectIntro:hover>.projectIntroImg {
+  overflow: hidden;
+  opacity: 0.8;
+}
+
+.ProjectIntro:hover>.postContent,
+.projectIntroImg {
+  background-color: var(--clrbgtint);
+}
+
+.projectUserImg {
+  width: 18%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectIntroImg img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+}
+
+.projectIntroTitle {
+  padding-top: 10px;
+  width: 95%;
+  height: 30px;
+  overflow: hidden;
+}
+
+.projectIntroPostedBy {
+  font-size: 14px;
+  margin: 7px 0 5px 0;
+  color: var(--clrlight);
+  width: 95%;
+  overflow: hidden;
+  height: 20px;
+}
+
+.HomeBtn:hover {
+  color: white;
+}
+
+.react-multiple-carousel__arrow--right {
+  right: 0px !important;
+  z-index: 20 !important;
+}
+.react-multiple-carousel__arrow--left {
+  left: 0px !important;
+  z-index: 20 !important;
+}
+
+
+/* =========== Responsiveness ============== */
+@media (width < 1028px){
+  .WelcomeOptionSection {
+    top: 440px;
+  }
+  .WelcomeTextBox h1{
+    font-size: 2em;
+  }
+}
+
+@media (width < 846px){
+  .WelcomeOptionSection {
+    top: 480px;
+    
+  }
+  .HomeContainer {
+    height: 600px;
+  }
+
+  .OptionImg {
+    width: 12%;
+    margin-left: 4%;
+  }
+  .OptionImg img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+}
+/* @media (width < 768px){
+ 
+} */
+
+@media(width < 768px){
+  .Option{
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .HomeContainer {
+    height: 700px;
+  }
+  .Options{
+    flex-direction: column;
+  }
+  .Option{
+    min-width: 250px;
+    margin-top: 6px;
+  }
+  .ProjectIntro{
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+  .DiscussionSection a{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
+}
+
+@media (width < 701px){
+  .WelcomeTextBox h1{
+    font-size: 1.8em;
+  }
+  .WelcomeTextBox p{
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  .PopularProjects{
+    font-size: .8em;
+  }
+
+
+  .RecentDiscussions h1 {
+    font-size: 1.8em;
+  }
+}
+
+@media (width < 620px){
+  .HomeContainer {
+    height: 1000px;
+  }
+  .WelcomeTextAndImgOuter{
+    flex-direction: column-reverse;
+    height: 500px;
+  }
+  .WelcomeOptionSection {
+    top: 640px;
+    
+  }
+  .WelcomeImageBox{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .WelcomeTextBox{
+    width: 100%;
+    border-radius: 12px;
+  }
+  .Option{
+    height: 150px;
+    width: 100%;
+  }
+  .DiscussionSection a{
+    width: 90%;
+  }
+}
+
+@media (width < 510px){
+  .WelcomeTextAndImgOuter{
+    flex-direction: column-reverse;
+    height: 550px;
+  }
+  .WelcomeOptionSection {
+    top: 700px;
+    width: 90%;
+  }
+  .WelcomeImageBox{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .WelcomeTextBox{
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .WelcomeTextBox h1{
+    font-size: 1.4em;
+  }
+
+  .DiscussionSection a{
+    width: 100%;
+    margin: 10px 0;
+  }
+
+
+
+}

@@ -1,0 +1,322 @@
+.LoginWrapper {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10001;
+    animation: fadein 0.5s;
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.LoginBox {
+    transition: top 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    min-height: 350px;
+    height: auto;
+    width: 500px;
+    margin-top: 20px;
+    background-color: white;
+    padding: 10px 20px 20px 20px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.SignupBox {
+    min-height: 600px;
+    height: auto;
+    width: 1000px;
+    background-color: white;
+    padding: 10px 20px 20px 20px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.ForgotPassBox{
+    height: auto;
+    padding-bottom: 30px;
+}
+.LoginBox .CloseBtn {
+    width: 100%;
+    transition: 0.3s;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 20px;
+    font-size: 40px;
+}
+
+.SignupBox .CloseBtn {
+    width: 100%;
+    transition: 0.3s;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 20px;
+    font-size: 40px;
+}
+.SignupHeading{
+   margin-left: 6%;
+}
+.close {
+    cursor: pointer;
+    width: 10px;
+}
+
+.close:hover {
+    color: var(--clrprimary);
+    transition: 0.3s;
+}
+
+.leftSide>h1 {
+    color: var(--clrdark);
+    text-align: start;
+    width: 80%;
+    margin: 0 20px 20px 15px;
+}
+
+.form {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formSignup{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.leftSide,.rightSide{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rightSide{
+}
+
+.form-element {
+    margin: 13px 0px;
+    width: 80%;
+}
+
+.form h1{
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.form-element label {
+    font-size: 16px;
+    color: var(--clrdark);
+}
+
+.forgot {
+    margin: 15px 0 0 0;
+    outline: none;
+    border: none;
+}
+
+.forgot>a:hover {
+    color: var(--clrprimary);
+}
+
+.form-element input[type="text"]:focus-visible,
+.form-element input[type="email"]:focus-visible,
+.form-element input[type="email"]:focus-visible,
+.form-element input[type="password"]:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    border: 1px solid var(--clrprimary);
+}
+
+.form-element input[type="text"],
+.form-element input[type="email"],
+.form-element input[type="password"],
+textarea,
+select {
+    transition: 0.3s;
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.form-element input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.form-element button {
+    transition: 0.3s;
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    margin-top: 25px;
+    background: #222;
+    color: #f5f5f5;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form-element button:hover {
+    background: var(--clrprimary);
+}
+
+.GoToRegister {
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+}
+
+.Dont {
+    padding: 3px;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.Register {
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--clrdark);
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.Register:hover {
+    color: var(--clrprimary);
+    /* text-decoration: underline; */
+    border-bottom: 1px solid var(--clrprimary);
+}
+
+#remember-me {
+    font-size: 15px;
+}
+
+span {
+    color: var(--clrdark);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+span:hover {
+    color: var(--clrprimary);
+}
+
+.acceptTnC {
+    margin: 4px;
+}
+
+
+.input-field {
+    position: relative;
+}
+
+.input-field input {
+    width: 370px;
+    height: 60px;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 0 15px;
+    border: 1px solid grey;
+    background: transparent;
+    /* color: #fff; */
+    outline: none;
+}
+
+.input-field label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    /* color: #fff; */
+    font-size: 19px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border: 1px solid var(--clrprimary);
+}
+
+input:focus~label,
+input:valid~label {
+    top: 0;
+    left: 15px;
+    font-size: 16px;
+    padding: 0 2px;
+    background: white;
+}
+
+.changeEmail{
+    height: auto;
+    padding-bottom: 20px;
+}
+.formErrors{
+    background-color: pink;
+    border: 1px solid var(--clrprimary);
+    padding: 0.5rem 2rem;
+    text-align: left;
+    margin: 5px auto;
+    width: 90%;
+    /* margin: 0 10px 5px 10px; */
+}
+
+.formErrors > ul > li{
+    margin-bottom: 2px;
+}
+
+.error{
+    color: var(--clrprimary);
+    font-size: 14px;
+    margin-top: 2px;
+}
+
+
+
+/* ============ Media Quries =============== */
+@media (width < 800px) {
+    .formSignup{
+        flex-direction: column;
+    }
+    .form-element{
+        width: 100%;
+    }
+    .leftSide{
+        width: 100%;
+    }
+    .rightSide{
+        width: 100%;
+    }
+    .SignupHeading{
+        margin-top: 200px;
+        font-size: 1.8em;
+        margin-left: 0;
+    }
+    .SignupBox .CloseBtn{
+        z-index: 1000;
+        position: absolute;
+        top: 204px;
+        right: 10px;
+    }
+}

@@ -1,0 +1,26 @@
+.SectionsBody {
+    background-color: var(--clrbgtint);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 70px;
+}
+.SectionsContainer{
+    width: 90%;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    max-width: 1520px;  
+}
+.SectionsContainer>p{
+    margin-top: 10px;
+}
+.sections{
+    flex-wrap: wrap;
+    margin-top: 30px;
+    display: grid;
+    justify-content: space-between;
+    row-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}

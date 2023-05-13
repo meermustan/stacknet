@@ -1,0 +1,31 @@
+.ContactUsBox {
+    transition: top 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    width: 750px;
+    overflow: hidden;
+    background-color: white;
+    padding: 10px 10px 40px 10px;
+    position: relative;
+    border-radius: 10px;
+}
+.ContactUsBox .CloseBtn {
+    width: 100%;
+    transition: 0.3s;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 20px;
+    font-size: 40px;
+}
+
+
+.contactUs{
+    text-align: left;
+    width: 80%;
+}
+.form > p{
+    text-align: start;
+    width: 80%;
+    margin-bottom: 15px;
+}
+.form > h2{
+    font-size: 25px;
+}

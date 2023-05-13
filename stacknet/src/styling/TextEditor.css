@@ -1,0 +1,99 @@
+.EditorBox {
+    border-left: 3px solid var(--clrprimary);
+    border-top: 3px solid var(--clrprimary);
+    border-right: 3px solid var(--clrprimary);
+    padding: 2px;
+    height: 350px;
+    border-radius: 10px 10px 0 0;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    z-index: 1;
+    animation: fadein 0.2s;
+    position: sticky;
+    bottom: 0;
+}
+
+.EditorBox:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+.EditorBox>.postUserImg {
+    align-items: flex-start;
+}
+
+.EditorBox>.postUserImg>img {
+    width: 80px;
+    height: 80px;
+}
+
+.EditorContent {
+    width: 100%;
+    padding: 10px;
+    height: 300px;
+    /* overflow: scroll; */
+}
+
+.editorTitleBox {
+    width: 100%;
+    outline: 1px solid var(--clrlighter);
+    border: none;
+    margin: 14px 0px 17px 0;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+.editorTitleBox:focus {
+    border: none;
+}
+
+.jodit-status-bar {
+    display: none;
+}
+
+.EditorBox>.CloseBtn {
+    position: absolute;
+    padding-top: 12px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.EditorBox>.CloseBtn:hover {
+    color: red;
+}
+
+.categNTitle {
+    display: flex;
+    width: 97%;
+}
+
+.categNTitle>select {
+    width: 12%;
+    height: 40px;
+    padding: 0 2px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: none;
+    color: red;
+}
+
+.categNTitle>select:focus {
+    border: none;
+}
+
+.joditBox {
+    overflow: scroll;
+    height: 200px;
+}
+.postBtn > button{
+    margin-top: 15px;
+    padding-left:  25px;
+    padding-right:  25px;
+}
+.postBtn > button > i{
+    color: white;
+    margin-right: 5px;
+}

@@ -1,0 +1,206 @@
+.DiscussionBody {
+  background-color: var(--clrbgtint);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+.DiscussionContainer {
+  width: 90%;
+  max-width: 1420px;
+  /* padding-right: 10px; */
+}
+
+.DiscussionHeading {
+  font-weight: bold;
+  font-size: 40px;
+  color: var(--clrdark);
+  margin: 30px 0;
+}
+
+.menuBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.SortBarContainer {
+  display: inline-block;
+  box-shadow: 0 2px 2px rgb(0 0 0 / 5%);
+}
+
+.SortBarContainer {
+  display: flex;
+  height: 55px;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.sortBtn {
+  background-color: white;
+  color: var(--clrlight);
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  border: none;
+  border-right: 2px solid #fafafa;
+  padding: 18px 35px;
+}
+
+.sortBtn:hover {
+  cursor: pointer;
+  background-color: #fff1f0;
+  color: var(--clrprimary);
+  border-bottom: 3px solid var(--clrprimary);
+}
+
+.currentSort {
+  color: red;
+  background-color: #fff1f0;
+  border-bottom: 3px solid var(--clrprimary);
+}
+
+.StartDiscussionBtn {
+  background-color: var(--clrprimary);
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  height: 48px;
+  width: 25%;
+  transition: 0.3s;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.StartDiscussionBtn:hover {
+  background-color: var(--clrprimarydark);
+}
+.PostsAndSideLinks {
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-between;
+}
+
+.SideLinkContainer {
+  width: 25%;
+}
+
+.SideLinksBox {
+  box-shadow: 0 2px 2px rgb(0 0 0 / 5%);
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 0 25px 0;
+}
+
+.SideLinksBox .BoxTitle {
+  width: 90%;
+  margin: 16px 0;
+  color: var(--clrdark);
+  padding-bottom: 15px;
+  /* text-align: center; */
+  border-bottom: 1px solid #e5e5e5;
+}
+.SideLinksBox .SideLink {
+  width: 100%;
+  display: flex;
+  cursor: pointer;
+  transition: 0.2s;
+  justify-content: space-between;
+  padding: 7px 22px;
+  font-size: 15px;
+}
+.SideLinksBox .SideLink:hover {
+  background-color: #fff1f0;
+}
+.SideLinksBox .SideLink p {
+  display: inline;
+  color: red;
+}
+.SideLinksBox .SideLink .TitleReplies {
+  color: var(--clrlight);
+  font-weight: normal;
+}
+.emptySpace {
+  height: 15px;
+}
+
+.postsBox {
+  width: 72%;
+}
+.postsList {
+  list-style-type: none;
+}
+.post {
+  display: flex;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 15px;
+  width: 100%;
+}
+.postContent {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 5px 5px rgb(0 0 0 / 5%);
+}
+
+.postContent:hover {
+  background-color: var(--clrbgtint);
+}
+.postImg {
+  width: 8%;
+  height: 60px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.postImg img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+}
+
+.postTextBox {
+  width: 87%;
+}
+.postTitle {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 5px 20px 1px 0px;
+  overflow: hidden;
+  height: 25px;
+}
+.postedBy {
+  font-size: 15px;
+  margin: 0;
+  color: var(--clrlight);
+}
+.tagsAndReplies {
+  margin: 5px 0;
+  display: flex;
+  font-size: 14px;
+  justify-content: space-between;
+}
+.tagsAndReplies .replies {
+  color: var(--clrlight);
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
+
+
+/* =============== Media Queries ============ */
+@media (width < 701) {
+  
+}

@@ -1,0 +1,190 @@
+.DiscussionBody {
+  background-color: var(--clrbgtint);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+.DiscussionContainer {
+  width: 95%;
+  max-width: 1520px;
+  /* padding-right: 10px; */
+}
+
+.DiscussionHeading {
+  font-weight: bold;
+  font-size: 40px;
+  color: var(--clrdark);
+  margin: 30px 0 25px 0;
+}
+
+.intro{
+  margin: 20px 0;
+}
+.menuBar {
+  display: flex;
+  position: sticky;
+  top: 70px;
+  z-index: 2;
+  justify-content: space-between;
+}
+
+.sortBarAndRefresh{
+  display: flex;
+  width: 72%;
+  justify-content: space-between;
+}
+.refreshBtn{
+  padding: 20px 10px 10px 0;
+  cursor: pointer;
+}
+.refreshBtn>i{
+  font-size: 20px;
+  color: var(--clrprimary);
+}
+.refreshBtn>i:hover{
+  color: var(--clrdark);
+}
+.SortBarContainer {
+  /* overflow: ; */
+  min-width: 400px;
+  display: inline-block;
+  box-shadow: 0 0 6px 4px rgb(212 212 212 / 11%);
+  display: flex;
+  height: 55px;
+  overflow: scroll;
+  border-radius: 3px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin-right: 10px;
+}
+.SortBarContainer::-webkit-scrollbar{
+  display: none;
+}
+
+.sortBtn {
+  background-color: white;
+  color: var(--clrlight);
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  border: none;
+  padding: 18px 35px;
+}
+
+.sortBtn:hover {
+  cursor: pointer;
+  background-color: #fff1f0;
+  color: var(--clrprimary);
+  border-bottom: 3px solid var(--clrprimary);
+}
+
+.currentSort {
+  color: red;
+  border-bottom: 3px solid var(--clrprimary);
+}
+
+.StartDiscussionBtn {
+  background-color: var(--clrprimary);
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  height: 48px;
+  width: 26%;
+  margin-top: 5px;
+  transition: 0.3s;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.StartDiscussionBtn:hover {
+  background-color: var(--clrprimarydark);
+}
+
+.PostsAndSideLinks {
+  display: flex;
+  margin-top: 5px;
+  justify-content: space-between;
+}
+
+.SideLinkContainer {
+  width: 26%;
+  min-width: 26%;
+}
+
+.postsBox {
+  width: 73%;
+  display: flex;
+  margin-top: 15px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loadMore{
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: var(--clrdark);
+  border: 1px solid white;
+  height: 40px;
+  background-color: white;
+  width: auto;
+  padding: 0px 18px;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.loadMore:hover{
+  border: 1px solid var(--clrlight);
+}
+
+.postsList {
+  list-style-type: none;
+  width: 100%;
+}
+
+
+/* ============ Media Queries ============= */
+@media (width < 900px){
+  .DiscussionHeading {
+    font-size: 30px;
+  }
+}
+@media (width < 630px) {
+  .menuBar{
+    flex-direction: column-reverse;
+  }
+  .StartDiscussionBtn{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .sortBarAndRefresh{
+    width: 100%;
+  }
+  .StartDiscussionBtn{
+    width: 160px;
+  }
+
+  .PostsAndSideLinks{
+    flex-direction: column;
+  }
+  .postsBox{
+    width: 100%;
+  }
+  .SideLinkContainer{
+    width: 100%;
+  }
+}
+
+@media (width < 500px) {
+  .SortBarContainer{
+    min-width: 280px;
+  }
+  
+}

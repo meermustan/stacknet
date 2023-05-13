@@ -1,0 +1,213 @@
+.post_Title {
+    width: 100%;
+    background-color: rgb(77, 109, 117);
+    height: 230px;
+    /* height: 30px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 2px solid var(--clr);
+    padding-top: 105px;
+}
+
+.sectionName {
+    background-color: white;
+    color: rgb(113, 143, 151);
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    letter-spacing: 0.3px;
+    margin-top: 10px;
+}
+
+.post_Title h1 {
+    font-weight: normal;
+    margin-top: 12px;
+    color: white;
+}
+
+.postBody {
+    background-color: white;
+    width: 100%;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.postContainer {
+    width: 90%;
+    max-width: 1520px;
+    display: flex;
+    justify-content: center;
+}
+
+.PostsAndSide {
+    display: flex;
+    margin-top: 40px;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.posts {
+    width: 92%;
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    padding: 10px 30px 0 10px;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 25px;
+}
+
+.notloggedinbox {
+    display: flex;
+    justify-content: center;
+    margin: 0px 0 40px 0;
+    width: 100%;
+}
+
+.notloggedinbox>div {
+    border-radius: 5px;
+    padding: 25px 45px;
+}
+
+.btnBlue {
+    background-color: white;
+    margin: 0 20px;
+    cursor: pointer;
+    font-size: 17px;
+    border: none;
+}
+
+.btnBlue:hover {
+    text-decoration: underline;
+}
+
+.sideOptions {
+    /* border-left: 1px solid var(--clrlighter); */
+    width: 12%;
+    display: flex;
+    padding-top: 30px;
+    align-items: flex-end;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.postReply {
+    background-color: var(--clrprimary);
+    outline: none;
+    border: none;
+    color: white;
+    padding: 12px 40px;
+    font-weight: bold;
+    position: sticky;
+    border-radius: 5px;
+    transition: 0.2s;
+    top: 100px;
+    cursor: pointer;
+}
+
+.postReply:hover {
+    background-color: var(--clrprimarydark);
+}
+
+.RepliesBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* padding: 0px 60px; */
+    /* padding-right: 30px; */
+}
+.replytopostdiv{
+    margin: 0px 10px 20px 10px;
+    border-radius: 10px;
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+
+.replytopostdiv:hover{
+    outline: 1px dashed rgb(210, 209, 209);
+}
+
+.WriteComment{
+    width: 90%;
+    padding: 20px;
+    font-size: 18px;
+    color: grey;
+    margin: 20px 0;
+}
+
+.commentBox {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    bottom: 0;
+}
+.commentBox > *{
+    max-width: 1520px;
+    width: 90%;
+}
+
+
+/* =========== Media Queries ============ */
+@media (width < 950px) {
+    .postReply{
+        padding: 12px 30px;
+    }
+    .postUserImg img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (width < 768px){
+    .postBoxContainer{
+        flex-direction: column;
+    }
+    .postBoxContent{
+        padding-left: 0;
+    }
+    .sideOptions{
+        width: 100px;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    .postReply{
+        width: 100px;
+        padding: 16px;
+    }
+    .posts{
+        width: 100%;
+        padding: 10px;
+    }
+    .PostsAndSide{
+        flex-direction: column-reverse;
+    }
+    .notloggedinbox div{
+        padding: 0;
+    }
+    .notloggedinbox div button{
+        margin-top: 10px;
+    }
+    .postUserImg img{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (width < 650px) {
+    .postReply{
+        width: 80px;
+        padding: 12px;
+    }
+    .postContainer{
+        width: 100%;
+    }
+    .post{
+        flex-direction: column;
+        position: relative;
+    }
+}

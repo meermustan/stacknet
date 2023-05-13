@@ -1,0 +1,313 @@
+.ProfileBody {
+  padding-top: 120px;
+  min-height: 66vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--clrbgtint);
+}
+
+.ProfileContainer {
+  width: 90%;
+  max-width: 1520px;
+  background-color: var(--clrbgtint);
+}
+
+.ProfileBox {
+  width: 100%;
+  /* background-color: rgb(113, 143, 151); */
+  background-color: rgb(77, 109, 117);
+  border-radius: 10px;
+  padding: 10px 10px 20px 10px;
+  display: flex;
+}
+
+.Avatar {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ProfileContainer .image {
+  border: 5px solid white;
+  cursor: pointer;
+  width: 110px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+  height: 110px;
+  margin-top: 20px;
+  transition: 0.2s;
+  border-radius: 100px;
+}
+
+.ProfileContainer .userImg {
+  width: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 100px;
+  transition: 0.2s;
+  border-radius: 100px;
+}
+
+.file-input__input {
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 2px;
+}
+
+.file-input__label {
+  border-radius: 100px;
+}
+
+.asd {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  border-radius: 100px;
+  background-color: var(--clrdark);
+  opacity: 0;
+  border: none;
+  font-size: 35px;
+}
+
+.asd:hover {
+  opacity: 0.8;
+}
+
+.ProfileBoxContent {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  display: flex;
+}
+
+.ProfileBoxContent>h1 {
+  color: white;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.info>span {
+  margin-bottom: 15px;
+  margin-right: 20px;
+  padding-bottom: 5px;
+  font-size: 13px;
+  font-weight: normal;
+  cursor: inherit;
+  color: white;
+}
+
+.info {
+  padding-left: 10px;
+}
+
+.bio {
+  background: none;
+  color: white;
+  padding: 10px 10px 10px 10px;
+  width: auto;
+  max-width: 80%;
+  border: 1px solid rgb(113, 143, 151);
+  outline: none;
+  /* height: auto; */
+}
+
+.bio::placeholder {
+  color: rgb(209, 206, 206);
+}
+
+.bio:hover,
+.bio:focus {
+  border: 1px dashed rgb(172, 172, 172);
+}
+
+.bio:focus {
+  background-color: rgb(96, 121, 128);
+  height: 70px;
+  padding-top: 0;
+}
+
+.Badges {
+  padding-left: 10px;
+  display: flex;
+  margin: 5px 0;
+}
+
+.badge {
+  background-color: white;
+  margin: 10px 0;
+  margin-right: 10px;
+  padding: 7px 12px;
+  cursor: pointer;
+  border-radius: 25px;
+  font-size: 13px;
+}
+
+.profileOptions {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.activeProfileBtn {
+  color: red;
+}
+
+.content {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.content .list {
+  display: flex;
+  flex-direction: column;
+  min-width: 15%;
+  max-width: 20%;
+  margin-right: 10px;
+  position: relative;
+}
+
+.content .list label {
+  height: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 60px;
+  /* margin-right: 50px; */
+  cursor: pointer;
+  padding-left: 20px;
+  transition: all 0.5s ease;
+  color: var(--clrbgtint);
+  z-index: 12;
+}
+
+.content .list label>i {
+  margin-right: 10px;
+}
+
+.content .list label:hover>span,
+.content .list label:hover>i {
+  color: var(--clrprimary);
+}
+
+.content .text-content {
+  width: 80%;
+  height: 100%;
+}
+
+.content .text {
+  display: none;
+}
+
+.content .text p {
+  text-align: justify;
+}
+
+.content .text-content .home {
+  display: block;
+}
+
+#blog:checked~.text-content .blog {
+  display: block;
+}
+
+#blog:checked~.text-content .home {
+  display: none;
+}
+
+.content input {
+  display: none;
+}
+
+.profileSettings{
+  margin-top: 20px;
+}
+
+.settingsBtns{
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+}
+.settingBtn{
+  width: auto;
+  margin-right: 20px;
+  padding: 7px 10px;
+  border-radius: 5px;
+  border: 1px solid var(--clrlight);
+}
+.settingBtn:hover{
+  border: 1px solid var(--clrprimary);
+} 
+
+
+
+
+
+
+
+
+/* ================= Media Queries ================ */
+@media (width < 900px){
+  .Avatar{
+    width:20%;
+  }
+}
+@media (width < 680px){
+  .ProfileBox{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bio{
+    width: 90%;
+    max-width: 90%;
+  }
+  .Badges{
+    flex-wrap: wrap;
+  }
+  .ProfileContainer .image{
+    width: 100px;
+    height: 100px;
+  }
+  .ProfileContainer .userImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .asd{
+    width: 75px;
+    height: 75px;
+  }
+
+  .content{
+    flex-direction: column;
+  }
+  .content .list {
+    width: 100%;
+    flex-direction: row;
+    max-width: 100%;
+  }
+  .content .text-content{
+    width: 100%;
+  }
+}
+
+@media (width < 520px) {
+  .bio{
+    width: 100%;
+    max-width: 100%;
+  }
+  .ProfileBoxContent{
+    width: 90%;
+  }
+  .ProfileContainer .image{
+    width: 85px;
+    height: 85px;
+  }
+}
